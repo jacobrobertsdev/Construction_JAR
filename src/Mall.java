@@ -49,6 +49,11 @@ public class Mall extends Business {
 	}
 	// End of Getters and Setters
 	
+	public void Draw() {
+		System.out.println("Drawing code for mall");
+	} // End of Draw
+
+	
 	public String displayData() {
 		StringBuilder data = new StringBuilder(super.displayData());
 		data.append("Rented Units: " + getNumRentedUnits() + "\n");

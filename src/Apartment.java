@@ -50,6 +50,11 @@ public class Apartment extends Residential {
 	}
 	// End of Getters and Setters
 	
+	public void Draw() {
+		System.out.println("Drawing code for apartment");
+	} // End of Draw
+
+	
 	public String displayData() {
 		StringBuilder data = new StringBuilder(super.displayData());
 		data.append("Rentable Units: " + getNumRentableUnits() + "\n");

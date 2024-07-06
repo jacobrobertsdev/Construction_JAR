@@ -71,7 +71,7 @@ public class Building {
 	
 	
 	public void Draw() {
-		System.out.println("Drawing code for " + this.getClass());
+		System.out.println("Drawing code for building");
 	} // End of Draw
 
 	public String displayData() {

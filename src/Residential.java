@@ -48,6 +48,11 @@ public class Residential extends Building {
 	}
 	// End of Getters and Setters
 	
+	public void Draw() {
+		System.out.println("Drawing code for residential");
+	} // End of Draw
+
+	
 	public String displayData() {
 		StringBuilder data = new StringBuilder(super.displayData());
 		data.append("Bedrooms: " + getNumBedrooms() + "\n");
