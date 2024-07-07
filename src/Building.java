@@ -75,7 +75,9 @@ public class Building {
 	} // End of Draw
 
 	public String displayData() {
-		StringBuilder data = new StringBuilder("Project Name: " + getProjectName() + "\n");
+		StringBuilder data = new StringBuilder("Displaying data for " + this.getClass() + "\n");
+		data.append("==========================================\n");
+		data.append("Project Name: " + getProjectName() + "\n");
 		data.append("Address: " + getCompleteAddress() + "\n");
 		data.append("Square Feet: " + getTotalSquareFeet() + "\n");
 		data.append("Occupancy Group: " + getOccupancyGroup() + "\n");

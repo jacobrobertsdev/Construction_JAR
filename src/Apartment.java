@@ -20,7 +20,6 @@ public class Apartment extends Residential {
 		this.numRentableUnits = numRentableUnits;
 		this.avgUnitSize = avgUnitSize;
 		this.parkingAvailable = parkingAvailable;
-		
 	} // End of preferred constructor
 
 	
