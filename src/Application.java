@@ -51,7 +51,7 @@ public class Application {
 		// Test displayData
 		System.out.println(building1.displayData());
 		
-		System.out.println("End tests for Building Class");
+		System.out.println("End of tests for Building Class");
 		System.out.println();
 
 //=====================================================
@@ -86,7 +86,7 @@ public class Application {
 		// Test displayData
 		System.out.println(business1.displayData());
 		
-		System.out.println("End tests for Business Class");
+		System.out.println("End of tests for Business Class");
 		System.out.println();
 		
 //=====================================================
@@ -132,12 +132,12 @@ public class Application {
 		// Test displayData
 		System.out.println(residential1.displayData());
 		
-		System.out.println("End tests for Residential Class");
+		System.out.println("End of tests for Residential Class");
 		System.out.println();
 		
-//=====================================================
-//********** End Tests for Residential Class **********
-//=====================================================
+//========================================================
+//********** End of Tests for Residential Class **********
+//========================================================
 		
 //==========================================
 //********** Tests for Mall Class **********
@@ -146,7 +146,7 @@ public class Application {
 		System.out.println("Begin tests for Mall Class");
 		System.out.println();
 		
-		// Create Residential object
+		// Create Mall object
 		Mall mall1 = new Mall("Test project", "123 Street", 500.00, "Assembly", "A-1", 30, 20, 1200.00, 40);
 						
 		// Test toString() (implicit call)
@@ -177,12 +177,92 @@ public class Application {
 		// Test displayData
 		System.out.println(mall1.displayData());
 		
-		System.out.println("End tests for Mall Class");
+		System.out.println("End of tests for Mall Class");
 		System.out.println();
 		
-//==============================================
-//********** End Tests for Mall Class **********
-//==============================================
+//=================================================
+//********** End of Tests for Mall Class **********
+//=================================================
+		
+//===============================================
+//********** Tests for Apartment Class **********
+//===============================================
+				
+		System.out.println("Begin tests for Apartment Class");
+		System.out.println();
+
+		// Create Apartment object
+		Apartment apartment1 = new Apartment("Test project", "123 Street", 500.00, "Assembly", "A-1", 3, 2, true, 35, 800.00, false);
+						
+		// Test toString() (implicit call)
+		System.out.println(apartment1);
+		System.out.println();
+						
+		// Test Getters & Setters
+		// Rentable Units
+		apartment1.setNumRentableUnits(42);
+		System.out.println(apartment1.getNumRentableUnits());
+		System.out.println();
+						
+		// Average Unit Size
+		apartment1.setAvgUnitSize(750.00);;
+		System.out.println(apartment1.getAvgUnitSize());
+		System.out.println();
+						
+		// Parking
+		apartment1.setParkingAvailable(true);;
+		System.out.println(apartment1.isParkingAvailable());
+		System.out.println();
+		// End Getters & Setters tests
+						
+		// Test Draw
+		apartment1.Draw();
+		System.out.println();
+						
+		// Test displayData
+		System.out.println(apartment1.displayData());
+				
+		System.out.println("End of tests for Apartment Class");
+		System.out.println();
+				
+//======================================================
+//********** End of Tests for Apartment Class **********
+//======================================================
+		
+//======================================================
+//********** Tests for SingleFamilyHome Class **********
+//======================================================
+				
+		System.out.println("Begin tests for SingleFamilyHome Class");
+		System.out.println();
+
+		// Create SingleFamilyHome object
+		SingleFamilyHome home1 = new SingleFamilyHome("Test project", "123 Street", 500.00, "Assembly", "A-1", 3, 2, true, false);
+						
+		// Test toString() (implicit call)
+		System.out.println(home1);
+		System.out.println();
+						
+		// Test Getters & Setters
+		// Garage
+		home1.setGarage(true);;
+		System.out.println(home1.hasGarage());
+		System.out.println();
+		// End Getters & Setters tests
+						
+		// Test Draw
+		home1.Draw();
+		System.out.println();
+						
+		// Test displayData
+		System.out.println(home1.displayData());
+				
+		System.out.println("End of tests for SingleFamilyHome Class");
+		System.out.println();
+				
+//=============================================================
+//********** End of Tests for SingleFamilyHome Class **********
+//=============================================================
 		
 	}
 
