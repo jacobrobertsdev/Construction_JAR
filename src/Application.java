@@ -139,6 +139,51 @@ public class Application {
 //********** End Tests for Residential Class **********
 //=====================================================
 		
+//==========================================
+//********** Tests for Mall Class **********
+//==========================================
+		
+		System.out.println("Begin tests for Mall Class");
+		System.out.println();
+		
+		// Create Residential object
+		Mall mall1 = new Mall("Test project", "123 Street", 500.00, "Assembly", "A-1", 30, 20, 1200.00, 40);
+						
+		// Test toString() (implicit call)
+		System.out.println(mall1);
+		System.out.println();
+						
+		// Test Getters & Setters
+		// Rented Units
+		mall1.setNumRentedUnits(10);;
+		System.out.println(mall1.getNumRentedUnits());
+		System.out.println();
+						
+		// Median Unit Size
+		mall1.setMedianUnitSize(900.00);;
+		System.out.println(mall1.getMedianUnitSize());
+		System.out.println();
+						
+		// Parking Spaces
+		mall1.setNumParkingSpaces(25);;
+		System.out.println(mall1.getNumParkingSpaces());
+		System.out.println();
+		// End Getters & Setters tests
+						
+		// Test Draw
+		mall1.Draw();
+		System.out.println();
+						
+		// Test displayData
+		System.out.println(mall1.displayData());
+		
+		System.out.println("End tests for Mall Class");
+		System.out.println();
+		
+//==============================================
+//********** End Tests for Mall Class **********
+//==============================================
+		
 	}
 
 }
